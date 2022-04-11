@@ -5,8 +5,6 @@ const nextConfig = {
     domains: ['i.ibb.co'],
     
   },
-  distDir: 'build',
-
 }
 
 module.exports = nextConfig
