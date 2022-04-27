@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && yarn run move-static",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "move-static": "cp -R ./node_modules/@pdftron/pdfjs-express-viewer/public/. ./dist/public/pdfjsexpress"
