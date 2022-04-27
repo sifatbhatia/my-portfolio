@@ -4,7 +4,7 @@ const Headr: React.FC = () => {
     return (
         <main>
         <section className='min-h-screen flex flex-col items-center justify-center '>
-            <video autoPlay loop muted playsInline  className="absolute w-full h-full object-cover"> 
+            <video autoPlay loop muted playsInline  className="absolute w-full h-full"> 
             <source  src="/assets/bg.mp4" type="video/mp4"/>
             <source  src="/assets/bg.webm" type="video/webm"/>
             </video>
