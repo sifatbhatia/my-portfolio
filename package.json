@@ -1,26 +1,31 @@
 {
-  "name": "next-site",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && yarn run move-static",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "move-static": "cp -R ./node_modules/@pdftron/pdfjs-express-viewer/public/. ./dist/public/pdfjsexpress"
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "3.2.0",
-    "@react-pdf-viewer/default-layout": "^3.2.0",
-    "custom-pointer-react": "^0.0.4",
+    "@pdftron/pdfjs-express-viewer": "^8.4.0",
+    "autoprefixer": "^10.4.4",
     "next": "12.1.4",
-    "pdfjs-dist": "2.13.216",
+    "next-themes": "^0.1.1",
+    "postcss": "^8.4.12",
     "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-lottie": "^1.2.3",
-    "sass": "^1.49.10"
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "eslint": "8.12.0",
-    "eslint-config-next": "12.1.4"
+    "@types/node": "17.0.23",
+    "@types/react": "18.0.1",
+    "@types/react-dom": "18.0.0",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4",
+    "sass": "^1.50.0",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.6.3"
   }
 }
